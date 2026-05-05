@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+
+:root{
+    /* Background colors */
+    --primary-background-color:black;
+    --secondary-background-color:#3c51a3;
+    --additonal-background-color:white;
+
+
+    /* Font colors */
+    --color-white:white;
+    --color-black:black;
+    --color-pink:#bb5ab8;
+
+    /* Font size clamp() */
+    --font-size-h1: clamp(2rem, 8vw, 8.5rem);
+    --font-size-h2: clamp(1.5rem, 3.5vw, 4.5rem);
+    --font-size-h3: clamp(1.2rem, 2.5vw, 2rem);
+    --font-size-p:  clamp(0.9rem, 1.5vw, 2.5rem);
+    --font-size-a:clamp(0.9rem, 1.5vw, 1.2rem);
+
+    /* Shadow colors */
+    --shadow-white: 0px 0px 16px 5px rgba(255, 255, 255, 0.8);
+    --shadow-secondary: 0px 0px 16px 5px rgb(138, 43, 226, 0.8);
+}
+body{
+    background-color: var(--primary-background-color);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size:clamp(0.9rem, 1.5vw, 1.2rem);
+}
+#menu-open-btn, #menu-close-btn{
+    display: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    margin-top: 5px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    position: fixed;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    gap: 10px;
+}
+.sign-in button{
+    padding:15px;
+    border: none;
+    background-color: var(--secondary-background-color);
+    color: white;
+}
+.sign-in a{
+    font-size:var(--font-size-a) ;
+}
+
+main{
+    background-image: url(./Assets/cameraimage.svg),url(./Assets/Black\ White\ and\ Pink\ Modern\ Photography\ Studio\ Presentation\ \(1\).svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 1300px 1300px;
+    background-position: 650px -200px,-500px -250px;
+    
+}
+.hero-container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+}
+.hero-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero-text{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px; 
+}
+.hero-text h1{
+    font-size: var(--font-size-h1);
+    color: white;
+    line-height: 1;
+}
+.p-container{
+    position: absolute;
+    right: 800px;   
+    top: 500px; 
+    transform: translateY(-50%);
+    width: 260px;
+    padding: 10px;
+}
+.hero-text .p-container p{
+    font-size: var(--font-size-p);
+    color: white;
+    opacity: 0.8;
+}
