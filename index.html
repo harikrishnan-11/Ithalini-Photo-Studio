@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <title>Ithali Photo Studio</title>
 </head>
 <body>
@@ -12,41 +12,42 @@
     <div id="nav-overlay"></div>
     <!-- Header -->
     <header>
+
         <div class="logo animate-slide-left" >
-            <a href="./index.html">
+            <a href="./index.html" class="company-logo">
             <img src="./Assets/Black White and Pink Modern Photography Studio Presentation.svg" alt="">Ithalini Studio
             </a>
         </div>
+
         <div class="nav animate-slide-up" id="nav" >
             <button id="menu-close-btn" class="fas fa-times"></button>
             <nav>
-                <a href="#home"><i class="fa-regular fa-house"></i>Home</a>
-                <a href="#about"><i class="fa-solid fa-circle-info"></i>About</a>
-                <a href="#service"><i class="fa-regular fa-camera"></i>Services</a>
-                <a href="#blog"><i class="fa-regular fa-message"></i>Blog</a>
-                <a href="#gallary"><i class="fa-regular fa-image"></i>Gallary</a>
-                <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a>
+                <a href="#home" class="menu"><i class="fa-regular fa-house"></i>Home</a>
+                <a href="#about" class="menu"><i class="fa-solid fa-circle-info"></i>About</a>
+                <a href="#service" class="menu"><i class="fa-regular fa-camera"></i>Services</a>
+                <a href="#blog" class="menu"><i class="fa-regular fa-message"></i>Blog</a>
+                <a href="#gallary" class="menu"><i class="fa-regular fa-image"></i>Gallary</a>
+                <a href="#contact" class="menu"><i class="fa-solid fa-phone"></i>Contact</a>
             </nav>
         </div>
 
-        <div class="hamburger-icon animate-slide-left" >
-            <div class="sign-in">
-                <a href="./Sign.html"><button>Sign in <i class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
+                <div class="sign-in">
+                <a href="./Sign.html"><button class="login-btn">Sign in <i class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
             </div>
-            <button id="menu-open-btn" ><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
-            </svg>
-            </button>
+
+        <div class="hamburger-icon animate-slide-left" >
+
+            <button id="menu-open-btn" >☰</button>
             <script src="./hamburger.js"></script>
         </div>
     </header>
 
-    <!-- Main section -->
-    <main>
-        <!-- Hero Container -->
+
+    <!-- <main>
+    
         <div class="hero-container">
 
-            <!-- Hero left container -->
+        
             <div class="hero-left animate-slide-left">
 
                 <div class="hero-text">
@@ -58,6 +59,6 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main> -->
 </body>
 </html>

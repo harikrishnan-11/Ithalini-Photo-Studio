@@ -84,7 +84,7 @@ nav{
 .sign-in a{
     font-size:var(--font-size-a) ;
 }
-
+/* 
 main{
     background-image: url(./Assets/cameraimage.svg),url(./Assets/Black\ White\ and\ Pink\ Modern\ Photography\ Studio\ Presentation\ \(1\).svg);
     background-repeat: no-repeat no-repeat;
@@ -130,4 +130,4 @@ main{
     font-size: var(--font-size-p);
     color: white;
     opacity: 0.8;
-}
+} */
